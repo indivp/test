@@ -1,0 +1,32 @@
+:root::-webkit-scrollbar{
+    display: none;
+  }
+  
+  :root {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+
+body{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.scrollable-content {
+    margin: auto;
+    height: 90vh;
+    overflow-y: scroll;
+}
+  
+.scrollable-content::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollable-content {
+    -ms-overflow-style: none;
+} 
+
+.scrollable-content {
+    scrollbar-width: none;
+}
