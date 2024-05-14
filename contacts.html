@@ -4,85 +4,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>SmlTlk</title>
 </head>
 <body>
-    <div class="container-fluid mt-1">
-        <form class="d-flex">
+    <nav class="navbar navbar-light bg-indigo fixed-top">
+        <form class="container-fluid">
             <div class="input-group">
-              <span 
-                class="input-group-text" 
-                id="basic-addon1">@</span>
-              <input 
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input 
                 type="text" 
                 class="form-control" 
-                placeholder="Username" 
-                aria-label="Username" 
+                placeholder="name" 
+                aria-label="name" 
                 aria-describedby="basic-addon1">
-                <button class="btn btn-primary">Go</button>
+                <button class="btn btn-primary"><i class="bi bi-search"></i></button>
             </div>
-          </form>
+        </form>
+    </nav>
+
+    <div class="container-fluid scrollable-content">
+        <table class="table" style="color: #80CBC4;">
+            <thead>
+                <tr>
+                    <th scope="col"></th>                    
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="badge bg-primary">
+                            SM
+                        </div>
+                       <div class="text-break text-capitalize">Super man</div>
+                        <div class="text-break text-lowercase">philippe-louis.serverino@outlook.com</div>
+                    </td>
+                    <td class="align-middle text-end">
+                        <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                            <a href="contact.html" type="button" class="btn btn-secondary"><i class="bi bi-arrow-right-circle"></i></a>
+                            <button type="button" class="btn btn-primary"><i class="bi bi-chat"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="badge bg-primary">SM</div>
+                        <div class="text-break text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil, esse tempore ad architecto dignissimos?</div>
+                        <div class="text-break text-lowercase">super@m</div>
+                    </td>
+                    <td class="align-middle text-end">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary"><i class="bi bi-chat"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="text-end">
+                            <div class="btn-group text-end" role="group" aria-label="Basic example">
+
+                                <button type="button" class="btn btn-secondary"><i class="bi bi-arrow-right-circle"></i></button>
+                            </div>
+                        </div>
+                        <div class="text-break text-capitalize">
+                            <span class="badge bg-primary">SM</span>
+                            Sammy junior smith and wessons
+                        </div>
+                        <div class="text-break text-lowercase">super@m</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-
-    <div 
-        class="offcanvas offcanvas-end" 
-        tabindex="-1" 
-        id="infosidebar" 
-        aria-labelledby="infosidebar-label">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="infosidebar-label">Info</h5>
-            <button 
-                class="btn-close"
-                type="button"
-                data-bs-dismiss="offcanvas"
-                aria-label="close"></button>
-        </div>
-    </div>
-    <nav class="navbar fixed-bottom  navbar-expand-sm navbar-light">
+    <nav class="navbar fixed-bottom navbar-expand navbar-light bg-indigo">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
-                <span class="fw-bold text-secondary"><i class="bi bi-house-door-fill"></i> SmlTlk</span>
+                <span class="fw-bold text-secondary">SmlTlk</span>
             </a>
-            <!--  Toggle mobile nav  -->
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#main-nav" 
-                aria-controls="main-nav" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- navbar links -->
-            <div 
-                class="collapse navbar-collapse justify-content-end align-center"
-                id="main-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="messages.html"><i class="bi bi-chat-text-fill"></i></br>Messages</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="contacts.html"><i class="bi bi-people-fill"></i></br>Contacts</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="#b"><i class="bi bi-gear-fill"></i></br>Settings</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a
-                            class="nav-link" 
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <a class="btn btn-primary" href="contact.html"><i class="bi bi-plus-lg"></i></a>
+                        <a class="btn btn-secondary" href="messages.html"><i class="bi bi-chat-text"></i></a>
+                        <a class="btn btn-secondary" href="contacts.html"><i class="bi bi-person-lines-fill"></i></a>
+                        <a class="btn btn-secondary" href="#b"><i class="bi bi-gear"></i></a>
+                        <button
+                            class="btn btn-secondary" 
                             href="#infosidebar"
                             data-bs-toggle="offcanvas"
                             role="button"
-                            aria-controls="infosidebar"><i class="bi bi-info-circle-fill"></i></br>Info</a>
-                    </li>
-                </ul>
+                            aria-controls="infosidebar"><i class="bi bi-info-circle"></i></button>
+                    </div>
+                  </div>
             </div>
         </div>
-        
     </nav>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
-</html>
+</body></html>
